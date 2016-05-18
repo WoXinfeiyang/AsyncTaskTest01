@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	<Button 
+	    android:id="@+id/executeBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentTop="true"
+		android:text="执行(execute)"
+	    />
+    
+	<Button 
+	    android:id="@+id/cancelBtn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/executeBtn"
+		android:text="取消(cancel)"
+	    />
+	
+	<ProgressBar 
+	    android:id="@+id/progressBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/cancelBtn"
+	    android:progress="0"
+	    android:max="100"
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+	    />
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/progressBar"
+	    >
+	    <TextView 
+	        android:id="@+id/textView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        />
+	    
+	</ScrollView>
+</RelativeLayout>
